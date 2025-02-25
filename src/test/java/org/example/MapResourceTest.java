@@ -19,5 +19,7 @@ class MapResourceTest {
     @Test
     void testMapping() {
         assert mapping != null;
+        assert mapping.get("key1").equals("value1");
+        assert mapping.get("key2").equals("value2");
     }
 }
